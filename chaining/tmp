@@ -1,0 +1,15 @@
+String path = "/home/mohamed/Documents/Tps/ArtificialIntelligence/base_regle.txt";
+  try (BufferedReader in = new BufferedReader(new FileReader( path ))) {
+    String line;
+    int nb=0;
+    String [] lines = in.
+    } catch (IOException e) {
+      System.out.println("no");
+      }
+
+
+      Regle regle=new Regle();
+                String _line=line.substring(line.lastIndexOf(":") + 1);
+                String premisses=_line.substring(0,_line.indexOf("=>")-1);
+                String conclusions=_line.substring(_line.lastIndexOf(">") + 1);
+                System.out.println(conclusions+ "\t"+conclusions.length()+ "\n" + premisses+ "\t"+ premisses.length());
